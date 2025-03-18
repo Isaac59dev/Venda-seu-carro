@@ -1,19 +1,18 @@
-/*reset*/
+/* Reset */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
     background-color: aliceblue;
+    color: #333;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5, {
+/* Tipografia */
+h1, h2, h3, h4, h5 {
     color: #333;
 }
 
@@ -21,37 +20,37 @@ p, label {
     color: #444;
 }
 
+/* Inputs */
 input {
     border: none;
     border-bottom: 1px solid #ccc;
     padding: 10px 0;
+    width: 100%;
+    max-width: 400px;
 }
 
-input[type="text"],
-input[type="number"],
-input[type="date"],
-input[type="file"] {
-    width: 400px;
-}
-
-
-/*page header*/
+/* Cabeçalho da página */
 .header {
-    height:160px;
-    padding:20px;
+    height: 160px;
+    padding: 20px;
     background-color: #673ab7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header h3 {
     color: #fff;
-    margin-top: 0;
+    margin: 0;
 }
 
-/* form container*/
+/* Formulário */
 .form-container {
     background-color: #fdfdfd;
-    width: 60%;
-    margin: 0 auto;
-    position: relative;
-    top: -62px;
+    max-width: 600px;
+    width: 90%;
+    margin: -62px auto 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
